@@ -27,11 +27,10 @@ function pickUpItem(hero, object) {
 function equipWeapon(hero) {
     if (hero.inventory.length < 1) {
         return false
-    } 
-    else { 
-        hero.weapon = hero.inventory[0]
-        return object;
-        
+    } else { 
+        hero.weapon = hero.inventory[0] 
+        return hero; //or 'return object' or 'return true'
     };
-    return hero;
 };
+
+console.log(hero);

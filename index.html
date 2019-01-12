@@ -3,15 +3,15 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-
-  <img src="" alt="">
-  <img id="inn" src="" alt="" onclick="rest(hero)">
-  <img id="dagger" src="" alt="" onclick="pickUpItem(hero, object)">
-  <img id="bag" src="" alt="" onclick="equipWeapon()">
-
-
+  
+  <div>
+    <img alt="" onclick="rest(hero)" id="inn" src="https://images.unsplash.com/photo-1512805147242-c3e79caf64bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+    <img alt="" onclick="pickUpItem(hero, object)" id="dagger" src="https://images.unsplash.com/photo-1534137196416-56e0d084e0f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+    <img alt="" onclick="equipWeapon(hero)" id="bag" src="https://images.unsplash.com/photo-1538040123555-9a04142424ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80" >
+</div>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
