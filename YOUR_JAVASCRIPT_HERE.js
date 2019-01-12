@@ -1,10 +1,10 @@
-let hero = {
-    name: "",
+var hero = {
+    name: "Hero",
     heroic: true,
     inventory: [],
     health: 10,
     weapon: {
-        type: "",
+        type: "Weapon unequiped",
         damage: 2,
     },
 };
@@ -33,4 +33,34 @@ function equipWeapon(hero) {
     };
 };
 
-console.log(hero);
+
+function displayStats() {
+
+    for (i in hero) {
+        console.log(i + ": " + hero[i]);            
+        // document.getElementById("stats").innerHTML = hero[i]
+    };   
+}
+displayStats();
+
+
+// MY FIRST ATTEMPT
+// function displayStats() {
+//    const entries = Object.entries(hero)
+//    document.getElementById("stats").innerHTML = entries
+// }
+// displayStats();
+
+// MY SECOND ATTEMPT
+// function displayStats() {
+//     var output = document.getElementById("stats")
+//     output.innerHTML = JSON.stringify(hero);
+// }
+// displayStats();
+
+// MY THIRD ATTEMPT
+// function displayStats() {
+//     var output = document.getElementById("stats")
+//     output.innerHTML = JSON.stringify(hero);
+// }
+// displayStats();
