@@ -58,10 +58,3 @@ displayStats();
 //     output.innerHTML = JSON.stringify(hero);
 // }
 // displayStats();
-
-// MY THIRD ATTEMPT
-// function displayStats() {
-//     var output = document.getElementById("stats")
-//     output.innerHTML = JSON.stringify(hero);
-// }
-// displayStats();
