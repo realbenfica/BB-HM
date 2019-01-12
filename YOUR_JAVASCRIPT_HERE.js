@@ -1,4 +1,4 @@
-var hero = {
+const hero = {
     name: "Hero",
     heroic: true,
     inventory: [],
@@ -33,16 +33,17 @@ function equipWeapon(hero) {
     };
 };
 
-
+// This is not a working answer,  
+// but it prints the object keys/values to the console.
 function displayStats() {
+for (i in hero) {
+//    var jones = 
+                console.log(i + ": " + hero[i]);  
+//    document.getElementById("stats").innerHTML = jones
+};  
+} 
 
-    for (i in hero) {
-        console.log(i + ": " + hero[i]);            
-        // document.getElementById("stats").innerHTML = hero[i]
-    };   
-}
 displayStats();
-
 
 // MY FIRST ATTEMPT
 // function displayStats() {
