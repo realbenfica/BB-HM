@@ -15,11 +15,18 @@ function rest(hero) {
 };
 
 function pickUpItem(hero, object) {
-    let weapon = hero.weapon;    
-    hero.inventory.push(weapon);
-    return hero;
+    hero.weapon = object
+    
+  
+
+    hero.inventory.push(object);    
+    return hero;    
+    hero.weapon.type = "dagger"
+    hero.weapon.damage = 2
+    return hero.weapon
 };
 
-function equipWeapon() {
-
+function equipWeapon(hero, object) {
+    hero.weapon.assign();
+    hero.inventory.unshift(object);
 };
