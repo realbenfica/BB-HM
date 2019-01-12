@@ -9,24 +9,29 @@ let hero = {
     },
 };
 
+const object = hero.weapon;
+
 function rest(hero) {
     hero.health = 10;
     return hero;
 };
 
 function pickUpItem(hero, object) {
-    hero.weapon = object
-    
-  
-
-    hero.inventory.push(object);    
-    return hero;    
-    hero.weapon.type = "dagger"
-    hero.weapon.damage = 2
-    return hero.weapon
+    hero.weapon = object;
+    hero.weapon.type = "dagger";
+    hero.weapon.damage = 2;
+    hero.inventory.push(object);
+    return hero;
 };
 
-function equipWeapon(hero, object) {
-    hero.weapon.assign();
-    hero.inventory.unshift(object);
+function equipWeapon(hero) {
+    if (hero.inventory.length < 1) {
+        return false
+    } 
+    else { 
+        hero.weapon = hero.inventory[0]
+        return object;
+        
+    };
+    return hero;
 };
